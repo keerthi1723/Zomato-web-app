@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 
 
 const uUrl = "https://developerjwt.herokuapp.com/api/auth/userinfo"
