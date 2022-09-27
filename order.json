@@ -1,0 +1,418 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "keerthi Gandham"
+    },
+    {
+      "id": 6576,
+      "hotel_name": "The Appetite Momos",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "18,19",
+      "cost": 195
+    },
+    {
+      "id": 3067,
+      "hotel_name": "New Udupi Grand",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "68,70",
+      "cost": 130
+    },
+    {
+      "id": 9233,
+      "hotel_name": "Empire Restaurant",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "20,21",
+      "cost": 280
+    },
+    {
+      "id": 8352,
+      "hotel_name": "Domino's Pizza",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "3,4",
+      "cost": 408
+    },
+    {
+      "id": 5959,
+      "hotel_name": "Food Adda",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "11,13",
+      "cost": 608
+    },
+    {
+      "id": 9674,
+      "hotel_name": "Chandni Chowk 2 Bangalore",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "64,65",
+      "cost": 291.45
+    },
+    {
+      "id": 8031,
+      "hotel_name": "Burger King",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "55,54",
+      "cost": 269.14
+    },
+    {
+      "id": 5789,
+      "hotel_name": "Burger King",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": "8500619127",
+      "address": "yrt 45/88",
+      "menuItem": "52,54",
+      "cost": 378.14
+    },
+    {
+      "id": 3120,
+      "hotel_name": "Captain Sam's",
+      "address": "yrt 45/88",
+      "menuItem": "26,27",
+      "cost": 338
+    },
+    {
+      "id": 1837,
+      "hotel_name": "Street Foods By Punjab Grill",
+      "address": "yrt 45/88",
+      "menuItem": "36",
+      "cost": 179
+    },
+    {
+      "id": 2090,
+      "hotel_name": "A Little Heaven Plate",
+      "address": "yrt 45/88",
+      "menuItem": "41,42",
+      "cost": 160
+    },
+    {
+      "id": 5018,
+      "hotel_name": "Street Foods By Punjab Grill",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "36,39",
+      "cost": 318
+    },
+    {
+      "id": 8865,
+      "hotel_name": "Chandni Chowk 2 Bangalore",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "63,65",
+      "cost": 333.45
+    },
+    {
+      "id": 7095,
+      "hotel_name": "Street Foods By Punjab Grill",
+      "address": "yrt 45/88",
+      "menuItem": "36",
+      "cost": 179
+    },
+    {
+      "id": 837,
+      "hotel_name": "AMA Cafe",
+      "address": "yrt 45/88",
+      "menuItem": "34"
+    },
+    {
+      "id": 6601,
+      "hotel_name": "MEALFUL WRAPS - Meals In A Wrap",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "48,46",
+      "cost": 418
+    },
+    [
+      52
+    ],
+    [
+      52
+    ],
+    [
+      52
+    ],
+    [
+      52
+    ],
+    {
+      "id": 3550,
+      "hotel_name": "Burger King",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "52",
+      "cost": 169
+    },
+    {
+      "id": 2235,
+      "hotel_name": "MEALFUL WRAPS - Meals In A Wrap",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "46,47",
+      "cost": 388
+    },
+    {
+      "id": 2178,
+      "hotel_name": "Empire Restaurant",
+      "name": "Keerthi Gandham",
+      "phone": "08500619127",
+      "address": "Sri Vishnu Priya womens pg, western hills colony, addaguta society lane 2 opp cream town.",
+      "menuItem": "22,23",
+      "cost": 205
+    },
+    {
+      "id": 1427,
+      "hotel_name": "Burger King",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "52,54",
+      "cost": 378.14
+    },
+    {
+      "id": 6731,
+      "hotel_name": "Food Adda",
+      "address": "yrt 45/88",
+      "menuItem": "11,12",
+      "cost": 518
+    },
+    {
+      "id": 1473,
+      "hotel_name": "Domino's Pizza",
+      "address": "yrt 45/88",
+      "menuItem": "3,4",
+      "cost": 408
+    },
+    {
+      "id": 7961,
+      "hotel_name": "Domino's Pizza",
+      "name": "Keerthi Gandham",
+      "email": "",
+      "phone": "08500619127",
+      "address": "Sri Vishnu Priya womens pg, western hills colony, addaguta society lane 2 opp cream town.",
+      "menuItem": "1,2",
+      "cost": 328
+    },
+    {
+      "id": 700,
+      "hotel_name": "Food Adda",
+      "address": "yrt 45/88",
+      "menuItem": "11,12",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "cost": 518
+    },
+    {
+      "id": 9004,
+      "hotel_name": "Pandit Ji Paratha Hut",
+      "address": "yrt 45/88",
+      "menuItem": "6,7",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "cost": 175
+    },
+    {
+      "id": 1535,
+      "hotel_name": "Domino's Pizza",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "1,2",
+      "cost": 328
+    },
+    {
+      "id": 4115,
+      "hotel_name": "Captain Sam's",
+      "name": "",
+      "email": "",
+      "cost": 308,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "27,28"
+    },
+    {
+      "id": 8310,
+      "hotel_name": "Street Foods By Punjab Grill",
+      "name": "",
+      "email": "",
+      "cost": 248,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "39,40"
+    },
+    {
+      "id": 5284,
+      "hotel_name": "AMA Cafe",
+      "name": "",
+      "email": "",
+      "cost": 475,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "34,32"
+    },
+    {
+      "id": 7427,
+      "hotel_name": "AMA Cafe",
+      "name": "",
+      "email": "",
+      "cost": 475,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "34,32"
+    },
+    {
+      "id": 9779,
+      "hotel_name": "Burger King",
+      "name": "",
+      "email": "",
+      "cost": 269.14,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "54,55"
+    },
+    {
+      "id": 4819,
+      "hotel_name": "Burger King",
+      "name": "",
+      "email": "",
+      "cost": 269.14,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "54,55"
+    },
+    {
+      "id": 9048,
+      "hotel_name": "Burger King",
+      "name": "",
+      "email": "",
+      "cost": 378.14,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "52,54"
+    },
+    {
+      "id": 6937,
+      "hotel_name": "Street Foods By Punjab Grill",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "cost": 288,
+      "phone": "8500619127",
+      "address": "yrt 45/88",
+      "menuItem": "36,40"
+    },
+    {
+      "id": 9102,
+      "hotel_name": "Domino's Pizza",
+      "name": "",
+      "email": "",
+      "cost": 258,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "4,4,1"
+    },
+    {
+      "id": 50,
+      "hotel_name": "Domino's Pizza",
+      "name": "",
+      "email": "",
+      "cost": 258,
+      "phone": "",
+      "address": "yrt 45/88",
+      "menuItem": "4,4,1"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2562,
+      "hotel_name": "Domino's Pizza",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "3,4",
+      "cost": 408
+    },
+    {
+      "id": 9402,
+      "hotel_name": "Captain Sam's",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "28,29",
+      "cost": 308
+    },
+    {
+      "id": 2033,
+      "hotel_name": "Empire Restaurant",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "22,24",
+      "cost": 210
+    },
+    {
+      "id": 1363,
+      "hotel_name": "Burger King",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "52,54,55",
+      "cost": 438.14
+    },
+    {
+      "id": 9051,
+      "hotel_name": "Pandit Ji Paratha Hut",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "phone": 8500619127,
+      "address": "yrt 45/88",
+      "menuItem": "7,10,9",
+      "cost": 220
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
