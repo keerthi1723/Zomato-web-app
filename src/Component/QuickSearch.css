@@ -1,4 +1,13 @@
 .font{
     font-weight: bold;
-    font-size: 26px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: #CB916B;
+}
+
+.meal-text{
+    font-weight: 500;
+    font-size: 20px;
+    color: #CB916B;
 }

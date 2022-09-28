@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Header.css"
 
 
 const uUrl = "https://developerjwt.herokuapp.com/api/auth/userinfo"
@@ -44,8 +45,8 @@ class Header extends React.Component {
           {/* <Link to="/Login">Login </Link>
           <Link to="/Register"> Register </Link> */}
 
-          <a href='/Login'>Login</a>
-          <a href='/Register'>Register</a>
+          <a href='/Login'  className="nav-link  mr-2">Log In</a>
+          <a href='/Register'  className="nav-link">Sign Up</a>
         </>
       )
 
@@ -56,9 +57,9 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="">
-        <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#FF9900",display: "flex" }}>
-          <a  href="" className="navbar-brand">Food Delivery</a>
+      <div className="header-banner">
+        <nav className="navbar navbar-expand-lg nav-banner">
+          <a  href="" className="navbar-brand">Zomato</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -67,9 +68,6 @@ class Header extends React.Component {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <a href="" className="nav-link">Add Restaurants</a>
-              </li>
               <li className="nav-item">
                 <a href='/' className="nav-link">Home</a>
               </li>
@@ -80,6 +78,13 @@ class Header extends React.Component {
               <li className="nav-item">
                 <a href="" className="nav-link">Post</a>
               </li>
+              <li className="nav-item">
+                <a href="" className="nav-link">About</a>
+              </li>
+              <li className="nav-item">
+                <a href="" className="nav-link">Contact</a>
+              </li>
+
             </ul>
             {this.conditionerHeader()}
 

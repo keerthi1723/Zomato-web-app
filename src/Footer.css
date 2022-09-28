@@ -1,6 +1,5 @@
-/* .page-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-} */
+.page-footer{
+    background-color: #CB916B;
+    padding: 15px;
+    color: #fff;
+}

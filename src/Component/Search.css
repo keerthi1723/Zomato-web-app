@@ -1,0 +1,22 @@
+.foodText{
+    font-size: 110px;
+    color: #fff;
+    font-weight: bold;
+}
+.foodInnerText{
+    font-size: 35px;
+    color: #fff;
+}
+.inner-side-drop{
+    border-radius: 13px;
+    background-color: white;
+    padding: 10px;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 0 !important;
+}
+   
+.inner-dropdown{
+    border: 0 !important;
+}

@@ -1,0 +1,25 @@
+.header-banner {
+    position: sticky;
+    top: 0;
+    z-index: 99999999;
+}
+.nav-banner {
+    background-color: #CB916B;
+    padding: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    margin-right: 8%;
+}

@@ -28,11 +28,10 @@ class QuickSearch extends React.Component {
       <>
         <div className='container-fluid'>
           <div id='quickWrapper'>
-            <span className='font'>
-              QuickDisplay
+            <span className='font mt-4'>
+              Quick Display
             </span>
-            <hr />
-            <span>
+            <span className='meal-text'>
               Find the Hotels By meal Type
             </span>
             <hr />

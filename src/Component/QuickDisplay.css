@@ -4,4 +4,15 @@
     display: inline-block;
     margin: 20px;
     justify-content: center;
+    z-index: -1;
+}
+.card-text{
+    font-size: 25px;
+    color: #CB916B;
+    font-weight: 600;
+}
+.card-inner{
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
 }

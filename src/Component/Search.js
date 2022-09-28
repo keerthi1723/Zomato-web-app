@@ -1,4 +1,5 @@
 import React from 'react'
+import './Search.css'
 
 const locationUrl = "https://zomatoajulypi.herokuapp.com/location";
 const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?stateId="
@@ -49,26 +50,30 @@ class Search extends React.Component {
   render() {
     const myStyle = {
       backgroundImage: "url('https://i.ibb.co/NVQxPB6/food-Wallpaper.png')",
-      height: '400px',
+      height: '450px',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
+      opacity: '0.8',
     }
 
     return (
       <>
         <div style={myStyle}>
-          <h1 className='foodText text-center pt-5'>Food Delivery</h1>
-          <h5 className='foodInnerText text-center pt-3'>Discover the Best Food in Our Location</h5>
+          <h1 className='foodText text-center pt-5'>Zomato</h1>
+          <h5 className='foodInnerText text-center pt-3'>Discover the Best Food & Drinks in Our Location</h5>
           {/* //dropdown */}
           <div id='dropdown' className='d-flex justify-content-center mt-5 '>
-            <select onChange={this.handleCity} >
+            <div className='inner-side-drop'>
+            <select onChange={this.handleCity} className="inner-dropdown">
               <option>---  Location Choose  ---</option>
               {this.renderCity(this.state.location)}
             </select>
-            <select id='restDropdown'>
+            <select id='restDropdown' className="inner-dropdown">
               <option>---  Restaurant Choose  ---</option>
               {this.renderRest(this.state.restData)}
             </select>
+            </div>
+           
 
           </div>
         </div>
