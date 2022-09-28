@@ -7,11 +7,11 @@ const order = "http://localhost:9870/posts"
 class ViewOrder extends React.Component {
   constructor() {
     super()
-    let email = sessionStorage.getItem('userInfo') ? sessionStorage.getItem('userInfo').split(',') : []
+    let sessionData = sessionStorage.getItem('userInfo') ? sessionStorage.getItem('userInfo').split(',') : []
 
     this.state = {
       orders: "",
-      email: email
+      email: sessionData ? sessionData[1]:''
     }
   }
 
@@ -24,7 +24,8 @@ class ViewOrder extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`${order}?email=${this.state.email}`).then((res) => { this.setState({ orders: res.json }) })
+    axios.get(`${order}?email=${this.state.email}`).then((res) => { console.log("response", res) 
+    this.setState({ orders: res.data }) })
   }
 
 }

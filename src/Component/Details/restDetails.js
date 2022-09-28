@@ -21,12 +21,16 @@ class restDetails extends React.Component {
     }
 
     addToCart = (data) => {
-      this.setState({userItem:data})
+        this.setState({ userItem: data })
     }
 
     proceed = () => {
         sessionStorage.setItem('menu', this.state.userItem);
+        localStorage.setItem("testname", "hussain");
+
         this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
+        window.location.reload();
+
     }
 
     render() {
@@ -74,7 +78,7 @@ class restDetails extends React.Component {
                                 {/* <Link to={`/listing/${this.state.mealId}`} className="btn btn-danger">Back</Link> */}
 
                                 <a href={`/listing/${this.state.mealId}`} className="btn btn-danger">Back</a>
-                                
+
                                 <button className="btn btn-success ml-4" onClick={this.proceed}>Proceed</button>
                             </div>
 
@@ -85,9 +89,9 @@ class restDetails extends React.Component {
                 </div>
                 <div className="col-md-12 mt-5">
                     <center className="mt-5"><h3>Menu</h3></center>
-                    <MenuDetails menudata = {this.state.menuDetails} 
-                    
-                    finalOrder = {(data) => {this.addToCart(data)}}/>
+                    <MenuDetails menudata={this.state.menuDetails}
+
+                        finalOrder={(data) => { this.addToCart(data) }} />
 
                 </div>
             </>
@@ -98,7 +102,7 @@ class restDetails extends React.Component {
         let restId = this.props.location.search.split('=')[1];
         let response = await axios.get(`${url}/${restId}`);
         let menuResponse = await axios.get(`${menuUrl}/${restId}`);
-        
+
         this.setState({ details: response.data[0], menuDetails: menuResponse.data });
 
     }

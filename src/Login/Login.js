@@ -1,4 +1,5 @@
 import React from "react";
+import history from "../history";
 
 const mUrl = "https://developerjwt.herokuapp.com/api/auth/login";
 
@@ -17,7 +18,7 @@ class Login extends React.Component {
         this.setState({ [event.target.name]: event.target.value })
     }
 
-    handleClick = () => {
+    handleClick = async () => {
         let obj = this.state;
         obj.menuItem = sessionStorage.getItem('menu');
         fetch(mUrl, {
@@ -30,11 +31,13 @@ class Login extends React.Component {
         })
             .then((res) => res.json())
             .then((data) => {
-                if(data.auth === false){
-                    this.setState({message:data.token})
+                if (data.auth === false) {
+                    this.setState({ message: data.token })
                 } else {
-                    sessionStorage.setItem('ltk',data.token)
+                    sessionStorage.setItem('ltk', data.token)
                     this.props.history.push('/')
+                    window.location.reload();
+
                 }
             })
     }
@@ -66,6 +69,7 @@ class Login extends React.Component {
                             </div>
                             <button className="btn btn-success" onClick={this.handleClick}>Login</button>
 
+
                         </div>
                     </div>
                 </div>
@@ -74,7 +78,7 @@ class Login extends React.Component {
         )
     }
 
-    
+
 
 }
 

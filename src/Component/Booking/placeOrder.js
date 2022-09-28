@@ -9,16 +9,16 @@ class placeOrder extends React.Component {
 
     constructor(props) {
         super(props)
-       
-        let sessionData = sessionStorage.getItem('userInfo') ? sessionStorage.getItem('userInfo').split(',') : []
-        console.log("pqwe", sessionData)
+
+        // let sessionData = sessionStorage.getItem('userInfo') ? sessionStorage.getItem('userInfo').split(',') : []
+        // console.log("pqwe", sessionData)
         this.state = {
             id: Math.floor(Math.random() * 10000),
             hotel_name: this.props.match.params.restName,
-            name: sessionData ? sessionData[0] : "",
-            email: sessionData ? sessionData[1] : "",
+            name: "",
+            email: "",
             cost: 0,
-            phone: sessionData ? sessionData[2] : "",
+            phone: "",
             address: "yrt 45/88",
             menuItem: ""
         }
@@ -53,9 +53,14 @@ class placeOrder extends React.Component {
             },
             body: JSON.stringify(obj)
         })
-            .then(this.props.history.push(`/ViewOrder`))
-    }
+            .then((res) => res.json())
 
+            .then((data) => {
+                this.props.history.push(`/ViewOrder`)
+                window.location.reload()
+            })
+
+    }
 
     render() {
 
@@ -123,13 +128,16 @@ class placeOrder extends React.Component {
                             <h2>Total Price is Rs: {this.state.cost}</h2>
                         </div>
                     </div>
+
                     <button className="btn btn-success" onClick={this.handleClick}>CheckOut</button>
                 </div>
             </div>
         )
     }
+
+
     // calling a api
-    componentDidMount() {
+    async componentDidMount() {
         let menuItem = sessionStorage.getItem('menu');
         let orderId = [];
         menuItem.split(',').map((item) => {
@@ -156,6 +164,17 @@ class placeOrder extends React.Component {
                 this.setState({ menuItem: data, cost: totalPrice })
             }
             )
+
+
+        let sessionData = sessionStorage.getItem('userInfo') ? sessionStorage.getItem('userInfo').split(',') : []
+
+        this.setState({
+
+            name: sessionData ? sessionData[0] : "",
+            email: sessionData ? sessionData[1] : "",
+            phone: sessionData ? sessionData[2] : "",
+        })
+
     }
 }
 

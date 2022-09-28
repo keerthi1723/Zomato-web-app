@@ -24,9 +24,11 @@ class Header extends React.Component {
   conditionerHeader = () => {
     if (sessionStorage.getItem('ltk') !== null) {
       let data = this.state.userData;
-      let outputArray = [data.name, data.email, data.phone];
-      sessionStorage.setItem('userInfo', outputArray);
-      sessionStorage.setItem('LogStatus', 'LoggedIn');
+      console.log("ppp", data)
+      // let outputArray = [data.name, data.email, data.phone];
+       
+      // sessionStorage.setItem('userInfo', outputArray);
+      // sessionStorage.setItem('LogStatus', 'LoggedIn');
       return (
         <>
           {/* <Link to="/" className="btn btn-info">Hi {data.name}</Link> */}
@@ -41,12 +43,12 @@ class Header extends React.Component {
     } else {
       return (
         <>
-        
+
           {/* <Link to="/Login">Login </Link>
           <Link to="/Register"> Register </Link> */}
 
-          <a href='/Login'  className="nav-link  mr-2">Log In</a>
-          <a href='/Register'  className="nav-link">Sign Up</a>
+          <a href='/Login' className="nav-link  mr-2">Log In</a>
+          <a href='/Register' className="nav-link">Sign Up</a>
         </>
       )
 
@@ -59,7 +61,7 @@ class Header extends React.Component {
     return (
       <div className="header-banner">
         <nav className="navbar navbar-expand-lg nav-banner">
-          <a  href="" className="navbar-brand">Zomato</a>
+          <a href="" className="navbar-brand">Zomato</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -96,18 +98,26 @@ class Header extends React.Component {
     )
   }
   componentDidMount() {
-    fetch(uUrl, {
-      method: 'GET',
-      headers: {
-        'x-access-token': sessionStorage.getItem('ltk')
-      }
-    })
+    if (sessionStorage.getItem('ltk') !== null) {
 
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log("userinfo", data)
-        this.setState({ userData: data })
+      fetch(uUrl, { 
+        method: 'GET',
+        headers: {
+          'x-access-token': sessionStorage.getItem('ltk')
+        }
       })
+
+        .then((res) => res.json())
+        .then((data) => {
+          // console.log("userinfo", data)
+          this.setState({ userData: data })
+          let outputArray = [data.name, data.email, data.phone];
+          localStorage.setItem('userLoginInfo', JSON.stringify(data))
+          sessionStorage.setItem('userInfo', outputArray);
+          sessionStorage.setItem('LogStatus', 'LoggedIn');
+        })
+    }
+
   }
 }
 
