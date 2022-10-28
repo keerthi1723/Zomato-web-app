@@ -12,7 +12,7 @@ import Login from './Login/Login'
 import Test from './Component/Test';
 // import Profile from './Login/Profile'
 // import User from './Login/User'
-import history from './history'
+// import history from './history'
 
 const App = () => {
   return (

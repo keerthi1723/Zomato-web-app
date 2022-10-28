@@ -25,15 +25,9 @@ class Header extends React.Component {
     if (sessionStorage.getItem('ltk') !== null) {
       let data = this.state.userData;
       console.log("ppp", data)
-      // let outputArray = [data.name, data.email, data.phone];
-       
-      // sessionStorage.setItem('userInfo', outputArray);
-      // sessionStorage.setItem('LogStatus', 'LoggedIn');
       return (
         <>
-          {/* <Link to="/" className="btn btn-info">Hi {data.name}</Link> */}
-
-          <a href='/' className='btn btn-success' type='button'>Hi {data.name}</a>
+          <a href='/' className='btn btn-success mr-3' type='button'>Hi {data.name}</a>
 
           <button className='btn btn-danger' type='button' onClick={this.handleLogout}>
             Logout
@@ -43,10 +37,6 @@ class Header extends React.Component {
     } else {
       return (
         <>
-
-          {/* <Link to="/Login">Login </Link>
-          <Link to="/Register"> Register </Link> */}
-
           <a href='/Login' className="nav-link  mr-2">Log In</a>
           <a href='/Register' className="nav-link">Sign Up</a>
         </>
@@ -61,7 +51,7 @@ class Header extends React.Component {
     return (
       <div className="header-banner">
         <nav className="navbar navbar-expand-lg nav-banner">
-          <a href="" className="navbar-brand">Zomato</a>
+          <a href="/" className="navbar-brand">Zomato</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -75,16 +65,16 @@ class Header extends React.Component {
               </li>
 
               <li className="nav-item">
-                <a href="" className="nav-link">Profile</a>
+                <a href="/" className="nav-link">Profile</a>
               </li>
               <li className="nav-item">
-                <a href="" className="nav-link">Post</a>
+                <a href="/" className="nav-link">Post</a>
               </li>
               <li className="nav-item">
-                <a href="" className="nav-link">About</a>
+                <a href="/" className="nav-link">About</a>
               </li>
               <li className="nav-item">
-                <a href="" className="nav-link">Contact</a>
+                <a href="/" className="nav-link">Contact</a>
               </li>
 
             </ul>

@@ -26,8 +26,8 @@
     margin-left: 2%
 }
 .icons>img {
-    width: 120px;
-    height: 120px;
+    width: 30px;
+    height: 30px;
 }
 #stock {
     font-size: 30px;
@@ -40,4 +40,13 @@
 }
 #Atoc {
     background-color: green
+}
+.itemSelected{
+    background-color: antiquewhite;
+    height: auto;
+    margin-bottom: 30px;
+}
+.itemAdded1{
+    background-color: #CB916B;
+    color: #fff;
 }

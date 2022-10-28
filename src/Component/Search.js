@@ -1,5 +1,6 @@
 import React from 'react'
 import './Search.css'
+import {withRouter} from 'react-router-dom'
 
 const locationUrl = "https://zomatoajulypi.herokuapp.com/location";
 const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?stateId="
@@ -46,6 +47,11 @@ class Search extends React.Component {
         console.log(data)
       })
   }
+  handleRest = (event) => {
+    this.props.history.push(`/details?restId=${event.target.value}`)
+    window.location.reload();
+  }
+
 
   render() {
     const myStyle = {
@@ -68,7 +74,7 @@ class Search extends React.Component {
               <option>---  Location Choose  ---</option>
               {this.renderCity(this.state.location)}
             </select>
-            <select id='restDropdown' className="inner-dropdown">
+            <select id='restDropdown' className="inner-dropdown" onChange={this.handleRest}>
               <option>---  Restaurant Choose  ---</option>
               {this.renderRest(this.state.restData)}
             </select>
@@ -94,4 +100,4 @@ class Search extends React.Component {
   }
 }
 
-export default Search
+export default withRouter(Search)

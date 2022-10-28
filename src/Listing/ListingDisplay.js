@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 
 const ListingDisplay = (props) => {
 
@@ -16,9 +15,7 @@ const ListingDisplay = (props) => {
                                 </div>
                                 <div className='col-md-7'>
                                     <div className='hotel_name'>
-                                        {/* <Link to={`/details/?restId=${item.restaurant_id}` }>
-                                            {item.restaurant_name}
-                                        </Link> */}
+                                       
 
 <a href={`/details/?restId=${item.restaurant_id}`}> {item.restaurant_name}</a>
                                         <div className='city_name'>

@@ -1,5 +1,9 @@
-.page-footer{
+.page-footer {
     background-color: #CB916B;
     padding: 15px;
     color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }

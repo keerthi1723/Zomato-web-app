@@ -3,7 +3,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import axios from "axios";
 import './details.css';
-// import { Link } from 'react-router-dom';
 import MenuDetails from './menuDetails.js'
 
 const url = "http://zomatoajulypi.herokuapp.com/details"
@@ -26,8 +25,6 @@ class restDetails extends React.Component {
 
     proceed = () => {
         sessionStorage.setItem('menu', this.state.userItem);
-        localStorage.setItem("testname", "hussain");
-
         this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
         window.location.reload();
 
@@ -75,7 +72,6 @@ class restDetails extends React.Component {
                                         <h6>Phone: {details.contact_number}</h6>
                                     </TabPanel>
                                 </Tabs>
-                                {/* <Link to={`/listing/${this.state.mealId}`} className="btn btn-danger">Back</Link> */}
 
                                 <a href={`/listing/${this.state.mealId}`} className="btn btn-danger">Back</a>
 

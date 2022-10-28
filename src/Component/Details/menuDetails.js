@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './details.css';
 class MenuDetails extends Component {
     orderId = [];
     placeOrder = (id) => {
@@ -45,12 +46,12 @@ class MenuDetails extends Component {
     }
     render() {
         return (
-            <div>
-                <div className="col-md-12 bg-success px-2 py-2 mb-2">
+            <div className="mainMenu1">
+                <div className="col-md-12 itemAdded1  px-2 py-2 mb-2">
                     <h4>Item Added</h4>
                     <h4>Item Number {this.renderCart(this.orderId)} Added</h4>
                 </div>
-                <div className="col-md-12 bg-info px-2 py-2">
+                <div className="col-md-12 itemSelected  px-2 py-2">
                     {this.renderMenu(this.props)}
                 </div>
             </div>

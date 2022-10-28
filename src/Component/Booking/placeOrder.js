@@ -10,8 +10,6 @@ class placeOrder extends React.Component {
     constructor(props) {
         super(props)
 
-        // let sessionData = sessionStorage.getItem('userInfo') ? sessionStorage.getItem('userInfo').split(',') : []
-        // console.log("pqwe", sessionData)
         this.state = {
             id: Math.floor(Math.random() * 10000),
             hotel_name: this.props.match.params.restName,
@@ -42,7 +40,7 @@ class placeOrder extends React.Component {
         this.setState({ [event.target.name]: event.target.value })
     }
 
-    handleClick = () => {
+    handleClick = () => {  
         let obj = this.state;
         obj.menuItem = sessionStorage.getItem('menu');
         fetch(order, {
@@ -50,15 +48,15 @@ class placeOrder extends React.Component {
             headers: {
                 'accept': "application/json",
                 'content-Type': "application/json"
-            },
-            body: JSON.stringify(obj)
-        })
-            .then((res) => res.json())
+            },  
+            body:JSON.stringify(obj)
 
-            .then((data) => {
-                this.props.history.push(`/ViewOrder`)
-                window.location.reload()
-            })
+            
+        })
+            // .then((res) => res.json())
+            // this.props.history.push(`/ViewOrder`)
+            // window.location.reload()
+            .then(console.log('Order Added'))
 
     }
 
@@ -77,7 +75,7 @@ class placeOrder extends React.Component {
         }
         // console.log("check", this.state) 
         return (
-            <div className="">
+            <div className="mainPlaceWrapper">
                 <div className="row">
                     <div className="container">
                         <div className="panel px-3 py-3" style={{ backgroundColor: "lightgray" }}>
@@ -85,7 +83,7 @@ class placeOrder extends React.Component {
                                 <h3>Your Order Form Restaurant {this.state.hotel_name}</h3>
                             </div>
                             <div className="panel-body">
-                                <form>
+                                <form action="https://developerpayment.herokuapp.com/paynow" method="POST">
                                     <div className="row">
                                         <input type="hidden" name="cost" value={this.state.cost} id="hotel" />
                                         <input type="hidden" name="id" value={this.state.id} id="hotel1" />
@@ -115,12 +113,13 @@ class placeOrder extends React.Component {
                                     </div>
                                 </form>
                             </div>
+
                         </div>
                         {this.renderItem(this.state.menuItem)}
 
 
                     </div>
-
+                   
                 </div>
                 <div className="">
                     <div className="row">
@@ -129,7 +128,7 @@ class placeOrder extends React.Component {
                         </div>
                     </div>
 
-                    <button className="btn btn-success" onClick={this.handleClick}>CheckOut</button>
+                    <button className="btn btn-success" onClick={this.handleClick} type="submit">CheckOut</button>
                 </div>
             </div>
         )
