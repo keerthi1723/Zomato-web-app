@@ -25,7 +25,6 @@ class ViewOrder extends React.Component {
 
   componentDidMount() {
     if(this.props.location){
-      console.log("inside ifff")
       let query = this.props.location.search.split('&');
       if(query){
           let data={

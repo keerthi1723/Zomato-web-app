@@ -78,7 +78,7 @@ class placeOrder extends React.Component {
             <div className="mainPlaceWrapper">
                 <div className="row">
                     <div className="container">
-                        <div className="panel px-3 py-3" style={{ backgroundColor: "lightgray" }}>
+                        <div className="panel px-3 py-3" style={{ backgroundColor: "gray" }}>
                             <div className="panel-heading">
                                 <h3>Your Order Form Restaurant {this.state.hotel_name}</h3>
                             </div>
