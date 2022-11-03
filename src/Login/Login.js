@@ -1,5 +1,6 @@
 import React from "react";
 // import history from "../history";
+import "./Login.css"
 
 const mUrl = "https://developerjwt.herokuapp.com/api/auth/login";
 
@@ -46,20 +47,20 @@ class Login extends React.Component {
             <div className="mt-5">
                 <div className="row">
                     <div className="container">
-                        <div className="panel px-3 py-3" style={{ backgroundColor: "lightpink" }}>
+                        <div className="panel px-3 py-3" style={{ backgroundColor: "#CB916B" }}>
                             <div className="panel-heading">
-                                <h3>Login</h3>
+                                <h3 className="text-white">Login</h3>
                             </div>
                             <div className="panel-body mt-5">
                                 <h3 style={{ color: "red" }}>{this.state.message}</h3>
                                 <div className="row">
                                     <div className="form-group col-md-6">
-                                        <label>Email</label>
+                                        <label className="text-white">Email</label>
                                         <input className="form-control" name="email" onChange={this.handleChange}
                                             value={this.state.email} id="control9" />
                                     </div>
                                     <div className="form-group col-md-6">
-                                        <label>Password</label>
+                                        <label className="text-white">Password</label>
                                         <input className="form-control" name="address" onChange={this.handleChange}
                                             value={this.state.password} id="control8" />
                                     </div>

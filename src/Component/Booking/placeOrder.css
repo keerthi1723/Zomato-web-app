@@ -12,3 +12,7 @@
 .mainPlaceWrapper{
     overflow: auto;
 }
+.panel{
+     background-color: #CB916B;
+     margin-top: 40px;
+}

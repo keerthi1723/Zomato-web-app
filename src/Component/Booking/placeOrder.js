@@ -78,34 +78,34 @@ class placeOrder extends React.Component {
             <div className="mainPlaceWrapper">
                 <div className="row">
                     <div className="container">
-                        <div className="panel px-3 py-3" style={{ backgroundColor: "gray" }}>
+                        <div className="panel px-3 py-3">
                             <div className="panel-heading">
-                                <h3>Your Order Form Restaurant {this.state.hotel_name}</h3>
+                                <h3 className="text-white">Your Order Form Restaurant {this.state.hotel_name}</h3>
                             </div>
                             <div className="panel-body">
                                 <form action="https://developerpayment.herokuapp.com/paynow" method="POST">
                                     <div className="row">
-                                        <input type="hidden" name="cost" value={this.state.cost} id="hotel" />
-                                        <input type="hidden" name="id" value={this.state.id} id="hotel1" />
-                                        <input type="hidden" name="hotel_name" value={this.state.hotel_name} id="hotel2" />
+                                        <input type="hidden"  name="cost" value={this.state.cost} id="hotel"  />
+                                        <input type="hidden"   name="id" value={this.state.id} id="hotel1" />
+                                        <input type="hidden"  name="hotel_name" value={this.state.hotel_name} id="hotel2" />
 
                                         <div className="form-group col-md-6">
-                                            <label>Name</label>
+                                            <label className="text-white">Name</label>
                                             <input className="form-control" name="name" onChange={this.handleChange}
                                                 value={this.state.name} id="hotel3" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label>Email</label>
+                                            <label className="text-white">Email</label>
                                             <input className="form-control" name="email" onChange={this.handleChange}
                                                 value={this.state.email} id="hotel4" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label>Phone</label>
+                                            <label className="text-white">Phone</label>
                                             <input className="form-control" name="phone" onChange={this.handleChange}
                                                 value={this.state.phone} id="hotel5" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label>Address</label>
+                                            <label className="text-white">Address</label>
                                             <input className="form-control" name="address" onChange={this.handleChange}
                                                 value={this.state.address} id="hotel6" />
                                         </div>
@@ -116,12 +116,7 @@ class placeOrder extends React.Component {
 
                         </div>
                         {this.renderItem(this.state.menuItem)}
-
-
-                    </div>
-                   
-                </div>
-                <div className="">
+                        <div className="">
                     <div className="row">
                         <div className="col-md-12">
                             <h2>Total Price is Rs: {this.state.cost}</h2>
@@ -130,6 +125,11 @@ class placeOrder extends React.Component {
 
                     <button className="btn btn-success" onClick={this.handleClick} type="submit">CheckOut</button>
                 </div>
+
+                    </div>
+                   
+                </div>
+               
             </div>
         )
     }

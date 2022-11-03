@@ -1,4 +1,5 @@
 import React from "react";
+import "./Register.css"
 
 const rUrl = "https://developerjwt.herokuapp.com/api/auth/register";
 
@@ -35,29 +36,29 @@ class Register extends React.Component {
             <div className="mt-5">
                 <div className="row">
                     <div className="container">
-                        <div className="panel px-3 py-3" style={{ backgroundColor: "lightGreen" }}>
+                        <div className="panel px-3 py-3" style={{ backgroundColor: "#CB916B" }}>
                             <div className="panel-heading">
-                                <h3>Register</h3>
+                                <h3 className="text-white">Register</h3>
                             </div>
                             <div className="panel-body mt-5">
                                     <div className="row">
                                         <div className="form-group col-md-6">
-                                            <label>Name</label>
+                                            <label className="text-white">Name</label>
                                             <input className="form-control" name="name" onChange={this.handleChange}
                                                 value={this.state.name} id="control" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label>Email</label>
+                                            <label className="text-white">Email</label>
                                             <input className="form-control" name="email" onChange={this.handleChange}
                                                 value={this.state.email} id="control1" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label>Password</label>
+                                            <label className="text-white">Password</label>
                                             <input className="form-control" name="address" onChange={this.handleChange}
                                                 value={this.state.password} id="control2" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label>Phone</label>
+                                            <label className="text-white">Phone</label>
                                             <input className="form-control" name="phone" onChange={this.handleChange}
                                                 value={this.state.phone} id="control3" />
                                         </div>

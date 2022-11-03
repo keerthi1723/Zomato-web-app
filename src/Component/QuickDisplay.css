@@ -2,11 +2,12 @@
     width: 450px;
     height: 250px;
     display: inline-block;
-    margin: 20px;
+    /* margin: 20px; */
     justify-content: center;
     z-index: -1;
     background-color: antiquewhite;
     border-radius: 13px;
+    margin: 20px 20px 40px 20px;
 }
 .mealcard-text{
     font-size: 25px;
@@ -20,4 +21,15 @@
 }
 .mealWrapper{
     padding: 20px;
+}
+@media screen and (max-width: 768px) {
+.mealcard{
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 0 30px 0;
+  }
+  .mealcardWrapper{
+    flex-direction: column;
+  }
+ 
 }

@@ -7,7 +7,7 @@ class Footer extends React.Component {
       <>
         <footer className="page-footer">
 
-          <div className="footer-copyright text-center">© 2022 All Rights Reserved
+          <div className="footer-copyright">© 2022 All Rights Reserved
            
           </div>
 

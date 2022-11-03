@@ -1,11 +1,14 @@
 .header-banner {
     position: sticky;
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 99999999;
 }
 .nav-banner {
     background-color: #CB916B;
-    padding: 15px;
+    height: 60px;
+    text-align: center;
 }
 
 .nav-link {
@@ -23,3 +26,21 @@
     font-weight: 800;
     margin-right: 8%;
 }
+.navbar-toggler{
+    background-color: #fff;
+}
+
+.navbar-collapse{
+    background-color: #CB916B;
+}
+
+@media screen and (max-width: 768px) {
+    .foodText{
+        font-size: 35px !important;
+    }
+    .foodInnerText{
+        font-size: 20px !important;
+        white-space: no-wrap !important;
+        
+    }
+  }

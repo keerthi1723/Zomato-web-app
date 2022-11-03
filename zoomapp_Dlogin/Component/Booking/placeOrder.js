@@ -49,7 +49,7 @@ class placeOrder extends React.Component {
             <div className="">
                 <div className="row">
                     <div className="container">
-                        <div className="panel px-3 py-3" style={{ backgroundColor: "lightgray" }}>
+                        <div className="panel px-3 py-3">
                             <div className="panel-heading">
                                 <h3>Your Order Form Restaurant {this.state.hotel_name}</h3>
                             </div>

@@ -673,6 +673,16 @@
       "phone": "8500619127",
       "address": "yrt 45/88",
       "menuItem": "34"
+    },
+    {
+      "id": 4144,
+      "hotel_name": "AMA Cafe",
+      "name": "keerthi",
+      "email": "keerthi@gmail.com",
+      "cost": 275,
+      "phone": "8500619127",
+      "address": "yrt 45/88",
+      "menuItem": "34,34"
     }
   ],
   "comments": [

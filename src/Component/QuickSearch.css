@@ -11,3 +11,9 @@
     font-size: 20px;
     color: #CB916B;
 }
+@media screen and (max-width: 768px) {
+   
+    .meal-text{
+        font-size: 14px;
+    }
+    }

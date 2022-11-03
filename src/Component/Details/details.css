@@ -1,6 +1,6 @@
 .main {
-    display: inline-block;
     margin-left: 5%;
+    flex-wrap: wrap;
 }
 .tileImage {
     width: 48%;

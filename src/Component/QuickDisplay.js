@@ -32,9 +32,9 @@ const QuickDisplay = (props) => {
         }
     }
     return (
-        <>
+        <div>
             {listMeal(props.mealData)}
-        </>
+        </div>
     )
 }
 
