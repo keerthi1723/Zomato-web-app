@@ -43,6 +43,7 @@ class placeOrder extends React.Component {
     handleClick = () => {  
         let obj = this.state;
         obj.menuItem = sessionStorage.getItem('menu');
+        console.log(obj)
         fetch(order, {
             method: 'POST',
             headers: {
