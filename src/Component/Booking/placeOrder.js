@@ -59,6 +59,9 @@ class placeOrder extends React.Component {
             // window.location.reload()
             .then(console.log('Order Added'))
 
+
+            
+
     }
 
     render() {
@@ -84,7 +87,7 @@ class placeOrder extends React.Component {
                                 <h3 className="text-white">Your Order Form Restaurant {this.state.hotel_name}</h3>
                             </div>
                             <div className="panel-body">
-                                <form action="https://developerpayment.herokuapp.com/paynow" method="POST">
+                                <form>
                                     <div className="row">
                                         <input type="hidden"  name="cost" value={this.state.cost} id="hotel"  />
                                         <input type="hidden"   name="id" value={this.state.id} id="hotel1" />

@@ -65,7 +65,7 @@ class Search extends React.Component {
     return (
       <>
         <div style={myStyle}>
-          <h1 className='foodText text-center pt-5'>Zomato</h1>
+          <h1 className='foodText text-center pt-5'>Foodpanda</h1>
           <h5 className='foodInnerText text-center pt-3'>Discover the Best Food & Drinks in Our Location</h5>
           {/* //dropdown */}
           <div id='dropdown' className='d-flex justify-content-center mt-5 '>

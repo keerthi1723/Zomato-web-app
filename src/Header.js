@@ -51,7 +51,7 @@ class Header extends React.Component {
     return (
       <div className="header-banner">
         <nav className="navbar navbar-expand-lg nav-banner">
-          <a href="/" className="navbar-brand">Zomato</a>
+          <a href="/" className="navbar-brand">Foodpanda</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -62,13 +62,6 @@ class Header extends React.Component {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <a href='/' className="nav-link">Home</a>
-              </li>
-
-              <li className="nav-item">
-                <a href="/" className="nav-link">Profile</a>
-              </li>
-              <li className="nav-item">
-                <a href="/" className="nav-link">Post</a>
               </li>
               <li className="nav-item">
                 <a href="/" className="nav-link">About</a>
