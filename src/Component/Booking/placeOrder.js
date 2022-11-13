@@ -63,6 +63,32 @@ class placeOrder extends React.Component {
             
 
     }
+    payment = () => {
+        var options = {
+          "key": "rzp_test_e371jEheqKuuRS", 
+          "amount": "50000", 
+          "currency": "INR",
+          "name": "Acme Corp",
+          "description": "Test Transaction",
+          "image": "https://example.com/your_logo",
+          "order_id": "order_9A33XWu170gUtm",
+          "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
+          "prefill": {
+            "name": "keerthi",
+            "email": "keerthi@gmail.com",
+            "contact": "8500619127"
+          },
+          "notes": {
+            "address": "Razorpay Corporate Office"
+          },
+          "theme": {
+            "color": "#3399cc"
+          }
+        };
+        var rzp1 =   new window.Razorpay(options);
+        rzp1.open();
+    
+      }
 
     render() {
 
@@ -127,7 +153,9 @@ class placeOrder extends React.Component {
                         </div>
                     </div>
 
-                    <button className="btn btn-success" onClick={this.handleClick} type="submit">CheckOut</button>
+                    <button className="btn btn-success"   onClick={this.payment} type="submit">CheckOut</button>
+                    
+                    {/* <button className="btn btn-success" onClick={this.handleClick}  onClick={this.payment} type="submit">CheckOut</button> */}
                 </div>
 
                     </div>
