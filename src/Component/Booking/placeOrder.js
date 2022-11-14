@@ -66,17 +66,17 @@ class placeOrder extends React.Component {
     payment = () => {
         var options = {
           "key": "rzp_test_e371jEheqKuuRS", 
-          "amount": "50000", 
+          "amount": (this.state.cost * 100).toString(), 
           "currency": "INR",
-          "name": "Acme Corp",
+          "name": "Foodpanda",
           "description": "Test Transaction",
           "image": "https://example.com/your_logo",
-          "order_id": "order_9A33XWu170gUtm",
+        //   "order_id": "order_9A33XWu170gUtm",
           "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
           "prefill": {
-            "name": "keerthi",
-            "email": "keerthi@gmail.com",
-            "contact": "8500619127"
+            "name": this.state.name,
+            "email": this.state.email,
+            "contact": this.state.phone
           },
           "notes": {
             "address": "Razorpay Corporate Office"
